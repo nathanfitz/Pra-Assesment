@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Segitiga">
+
+    <EditText
+        android:id="@+id/et_panjangSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukan_panjang_persegi"
+        android:layout_marginTop="50dp"
+        android:width="250dp"
+        android:inputType="number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:id="@+id/et_lebarSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/masukan_lebar_persegi"
+        android:layout_marginTop="8dp"
+        android:width="250dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_panjangSGT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_hitungSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/et_lebarSGT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_luasSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/luas"
+        android:width="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/btn_hitungSGT"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tv_kelilingSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/keliling"
+        android:width="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/tv_luasSGT"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/btn_shareSGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_kelilingSGT"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
